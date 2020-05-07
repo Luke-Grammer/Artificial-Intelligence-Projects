@@ -1,0 +1,36 @@
+# Facts
+((occupation joe hotel_manager))
+((occupation sam brain_surgeon))
+((occupation bill trial_lawyer))
+((occupation cindy oral_surgeon))
+((occupation joan civil_lawyer))
+((occupation len graphic_artist))
+((occupation lance heart_surgeon))
+((occupation frank patent_lawyer))
+((occupation charlie plastic_surgeon))
+((occupation lisa investment_banker))
+
+((lives_in joe pittsburgh))
+((lives_in sam houston))
+((lives_in bill los_angeles))
+((lives_in cindy omaha))
+((lives_in joan chicago))
+((lives_in len austin))
+((lives_in lance dallas))
+((lives_in frank dallas))
+((lives_in charlie houston))
+((lives_in lisa albuquerque))
+
+# Rules
+((lives_in ?x houston) (resident_of_TX ?x))
+((lives_in ?x austin) (resident_of_TX ?x))
+((lives_in ?x dallas) (resident_of_TX ?x))
+
+((occupation ?x brain_surgeon) (surgeon ?x))
+((occupation ?x oral_surgeon) (surgeon ?x))
+((occupation ?x heart_surgeon) (surgeon ?x))
+((occupation ?x plastic_surgeon) (surgeon ?x))
+
+((occupation ?x trial_lawyer) (lawyer ?x))
+((occupation ?x civil_lawyer) (lawyer ?x))
+((occupation ?x patent_lawyer) (lawyer ?x))

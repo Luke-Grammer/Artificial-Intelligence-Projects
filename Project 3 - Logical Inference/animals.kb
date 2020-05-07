@@ -1,0 +1,11 @@
+# facts
+((mammal dog))
+((mammal cat))
+((bird penguin))
+((bird canary))
+((flies canary))
+((car ford))
+
+# rules 
+((mammal ?m) (animal ?m))
+((bird ?m) (animal ?m))

@@ -1,0 +1,184 @@
+python3 Main.py 4_queens.cnf
+Props:
+Q11 Q12 Q13 Q14 Q21 Q22 Q23 Q24 Q31 Q32 Q33 Q34 Q41 Q42 Q43 Q44 
+Initial clauses:
+0: (Q11 v Q12 v Q13 v Q14)
+1: (Q21 v Q22 v Q23 v Q24)
+2: (Q31 v Q32 v Q33 v Q34)
+3: (Q41 v Q42 v Q43 v Q44)
+4: (Q11 v Q21 v Q31 v Q41)
+5: (Q12 v Q22 v Q32 v Q42)
+6: (Q13 v Q23 v Q33 v Q43)
+7: (Q14 v Q24 v Q34 v Q44)
+8: (-Q11 v -Q12)
+9: (-Q11 v -Q13)
+10: (-Q11 v -Q14)
+11: (-Q12 v -Q13)
+12: (-Q12 v -Q14)
+13: (-Q13 v -Q14)
+14: (-Q21 v -Q22)
+15: (-Q21 v -Q23)
+16: (-Q21 v -Q24)
+17: (-Q22 v -Q23)
+18: (-Q22 v -Q24)
+19: (-Q23 v -Q24)
+20: (-Q31 v -Q32)
+21: (-Q31 v -Q33)
+22: (-Q31 v -Q34)
+23: (-Q32 v -Q33)
+24: (-Q32 v -Q34)
+25: (-Q33 v -Q34)
+26: (-Q41 v -Q42)
+27: (-Q41 v -Q43)
+28: (-Q41 v -Q44)
+29: (-Q42 v -Q43)
+30: (-Q42 v -Q44)
+31: (-Q43 v -Q44)
+32: (-Q11 v -Q21)
+33: (-Q11 v -Q31)
+34: (-Q11 v -Q41)
+35: (-Q21 v -Q31)
+36: (-Q21 v -Q41)
+37: (-Q31 v -Q41)
+38: (-Q12 v -Q22)
+39: (-Q12 v -Q32)
+40: (-Q12 v -Q42)
+41: (-Q22 v -Q32)
+42: (-Q22 v -Q42)
+43: (-Q32 v -Q42)
+44: (-Q13 v -Q23)
+45: (-Q13 v -Q33)
+46: (-Q13 v -Q43)
+47: (-Q23 v -Q33)
+48: (-Q23 v -Q43)
+49: (-Q33 v -Q43)
+50: (-Q14 v -Q24)
+51: (-Q14 v -Q34)
+52: (-Q14 v -Q44)
+53: (-Q24 v -Q34)
+54: (-Q24 v -Q44)
+55: (-Q34 v -Q44)
+56: (-Q11 v -Q22)
+57: (-Q11 v -Q33)
+58: (-Q11 v -Q44)
+59: (-Q12 v -Q23)
+60: (-Q12 v -Q34)
+61: (-Q12 v -Q21)
+62: (-Q13 v -Q24)
+63: (-Q13 v -Q22)
+64: (-Q13 v -Q31)
+65: (-Q14 v -Q23)
+66: (-Q14 v -Q32)
+67: (-Q14 v -Q41)
+68: (-Q21 v -Q32)
+69: (-Q21 v -Q43)
+70: (-Q22 v -Q33)
+71: (-Q22 v -Q44)
+72: (-Q22 v -Q31)
+73: (-Q23 v -Q34)
+74: (-Q23 v -Q32)
+75: (-Q23 v -Q41)
+76: (-Q24 v -Q33)
+77: (-Q24 v -Q42)
+78: (-Q31 v -Q42)
+79: (-Q32 v -Q43)
+80: (-Q32 v -Q41)
+81: (-Q33 v -Q44)
+82: (-Q33 v -Q42)
+83: (-Q34 v -Q43)
+-----------
+Model: {'Q11': None, 'Q12': None, 'Q13': None, 'Q14': None, 'Q21': None, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Choice point for Q11
+Choosing True
+Model: {'Q11': True, 'Q12': None, 'Q13': None, 'Q14': None, 'Q21': None, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q11 v -Q12) implies Q12 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': None, 'Q14': None, 'Q21': None, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q11 v -Q13) implies Q13 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': None, 'Q21': None, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q11 v -Q14) implies Q14 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': None, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q11 v -Q21) implies Q21 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q11 v -Q22) implies Q22 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q11 v -Q31) implies Q31 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': None, 'Q24': None, 'Q31': False, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q11 v -Q33) implies Q33 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': None, 'Q24': None, 'Q31': False, 'Q32': None, 'Q33': False, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q11 v -Q41) implies Q41 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': None, 'Q24': None, 'Q31': False, 'Q32': None, 'Q33': False, 'Q34': None, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q11 v -Q44) implies Q44 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': None, 'Q24': None, 'Q31': False, 'Q32': None, 'Q33': False, 'Q34': None, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': False}
+Choice point for Q23
+Choosing True
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': True, 'Q24': None, 'Q31': False, 'Q32': None, 'Q33': False, 'Q34': None, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': False}
+Unit clause on (-Q23 v -Q24) implies Q24 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': True, 'Q24': False, 'Q31': False, 'Q32': None, 'Q33': False, 'Q34': None, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': False}
+Unit clause on (-Q23 v -Q32) implies Q32 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': True, 'Q24': False, 'Q31': False, 'Q32': False, 'Q33': False, 'Q34': None, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': False}
+Unit clause on (Q31 v Q32 v Q33 v Q34) implies Q34 is True
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': True, 'Q24': False, 'Q31': False, 'Q32': False, 'Q33': False, 'Q34': True, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': False}
+Unit clause on (Q12 v Q22 v Q32 v Q42) implies Q42 is True
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': True, 'Q24': False, 'Q31': False, 'Q32': False, 'Q33': False, 'Q34': True, 'Q41': False, 'Q42': True, 'Q43': None, 'Q44': False}
+Unit clause on (-Q42 v -Q43) implies Q43 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': True, 'Q24': False, 'Q31': False, 'Q32': False, 'Q33': False, 'Q34': True, 'Q41': False, 'Q42': True, 'Q43': False, 'Q44': False}
+Backtrack!
+Choosing False for Q23
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': None, 'Q31': False, 'Q32': None, 'Q33': False, 'Q34': None, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': False}
+Unit clause on (Q21 v Q22 v Q23 v Q24) implies Q24 is True
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': False, 'Q32': None, 'Q33': False, 'Q34': None, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': False}
+Unit clause on (-Q24 v -Q34) implies Q34 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': False, 'Q32': None, 'Q33': False, 'Q34': False, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': False}
+Unit clause on (Q31 v Q32 v Q33 v Q34) implies Q32 is True
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': False, 'Q32': True, 'Q33': False, 'Q34': False, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': False}
+Unit clause on (-Q32 v -Q42) implies Q42 is False
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': False, 'Q32': True, 'Q33': False, 'Q34': False, 'Q41': False, 'Q42': False, 'Q43': None, 'Q44': False}
+Unit clause on (Q41 v Q42 v Q43 v Q44) implies Q43 is True
+Model: {'Q11': True, 'Q12': False, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': False, 'Q32': True, 'Q33': False, 'Q34': False, 'Q41': False, 'Q42': False, 'Q43': True, 'Q44': False}
+Backtrack!
+Choosing False for Q11
+Model: {'Q11': False, 'Q12': None, 'Q13': None, 'Q14': None, 'Q21': None, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Choice point for Q12
+Choosing True
+Model: {'Q11': False, 'Q12': True, 'Q13': None, 'Q14': None, 'Q21': None, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q12 v -Q13) implies Q13 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': None, 'Q21': None, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q12 v -Q14) implies Q14 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': None, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q12 v -Q21) implies Q21 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': None, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q12 v -Q22) implies Q22 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': None, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q12 v -Q23) implies Q23 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': None, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (Q21 v Q22 v Q23 v Q24) implies Q24 is True
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': None, 'Q32': None, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q12 v -Q32) implies Q32 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': None, 'Q32': False, 'Q33': None, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q24 v -Q33) implies Q33 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': None, 'Q32': False, 'Q33': False, 'Q34': None, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q24 v -Q34) implies Q34 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': None, 'Q32': False, 'Q33': False, 'Q34': False, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (Q31 v Q32 v Q33 v Q34) implies Q31 is True
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': True, 'Q32': False, 'Q33': False, 'Q34': False, 'Q41': None, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q31 v -Q41) implies Q41 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': True, 'Q32': False, 'Q33': False, 'Q34': False, 'Q41': False, 'Q42': None, 'Q43': None, 'Q44': None}
+Unit clause on (-Q12 v -Q42) implies Q42 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': True, 'Q32': False, 'Q33': False, 'Q34': False, 'Q41': False, 'Q42': False, 'Q43': None, 'Q44': None}
+Unit clause on (Q13 v Q23 v Q33 v Q43) implies Q43 is True
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': True, 'Q32': False, 'Q33': False, 'Q34': False, 'Q41': False, 'Q42': False, 'Q43': True, 'Q44': None}
+Unit clause on (-Q43 v -Q44) implies Q44 is False
+Model: {'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': True, 'Q32': False, 'Q33': False, 'Q34': False, 'Q41': False, 'Q42': False, 'Q43': True, 'Q44': False}
+Success!
+-----------
+Total backtracks:  2
+Total choice points:  3
+Total nodes visited:  39
+KB and additional facts can be satisfied with the given model
+{'Q11': False, 'Q12': True, 'Q13': False, 'Q14': False, 'Q21': False, 'Q22': False, 'Q23': False, 'Q24': True, 'Q31': True, 'Q32': False, 'Q33': False, 'Q34': False, 'Q41': False, 'Q42': False, 'Q43': True, 'Q44': False}
+-----------
+True props:
+Q12
+Q24
+Q31
+Q43

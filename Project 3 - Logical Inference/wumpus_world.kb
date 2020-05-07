@@ -1,0 +1,47 @@
+# Facts
+# Row 1 adjacency
+(adjacent R11 R12)
+(adjacent R11 R21)
+(adjacent R12 R22)
+(adjacent R12 R13)
+(adjacent R13 R14)
+(adjacent R13 R23)
+(adjacent R14 R24)
+
+# Row 2 adjacency
+(adjacent R21 R31)
+(adjacent R21 R22)
+(adjacent R22 R32)
+(adjacent R22 R23)
+(adjacent R23 R33)
+(adjacent R23 R24)
+(adjacent R24 R34)
+
+# Row 3 adjacency
+(adjacent R31 R41)
+(adjacent R31 R32)
+(adjacent R32 R42)
+(adjacent R32 R33)
+(adjacent R33 R43)
+(adjacent R33 R34)
+(adjacent R34 R44)
+
+# Row 4 adjacency
+(adjacent R41 R42)
+(adjacent R42 R43)
+(adjacent R43 R44)
+
+# agent percepts after visiting R11, R21, and R12
+(unstenchy R11)
+(calm R11)
+(unstenchy R12)
+(calm R21)
+
+# Rules
+((unstenchy ?x) (adjacent ?x ?y) (wumpus_free ?y))
+((unstenchy ?x) (adjacent ?y ?x) (wumpus_free ?y))
+
+((calm ?x) (adjacent ?x ?y) (pit_free ?y))
+((calm ?x) (adjacent ?y ?x) (pit_free ?y))
+
+((wumpus_free ?x) (pit_free ?x) (safe ?x))

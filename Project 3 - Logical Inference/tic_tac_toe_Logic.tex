@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+    \usepackage{amsmath,amssymb,amsthm,latexsym,geometry}
+    \geometry{ margin=0.7in}
+    \newcommand\tab[1][3cm]{\hspace*{#1}}
+    
+\begin{document}
+\vspace*{-10mm}
+
+{\large \noindent
+\underline{Tic-Tac-Toe Strategy:}} \\
+\\
+The strategy used for tic-tac-toe follows eight steps in decreasing precedence. \\
+\\
+\textbf{1)} If a winning move can be made, make it. \\
+\tab\textbf{I.} Check rows \\
+\begin{center}
+\begin{tabular}{c|c|c}
+	  &   &   \\      \hline
+	O & O &(O)\\      \hline
+	  &   &  
+  \end{tabular} \\
+\end{center}
+\tab\textbf{II.} Check columns \\
+\begin{center}
+	\begin{tabular}{c|c|c}
+		  & O &   \\      \hline
+		  &(O)&   \\      \hline
+		  & O &  
+	  \end{tabular} \\
+	\end{center}
+\tab\textbf{III.} Check Diagonals \\
+\begin{center}
+	\begin{tabular}{c|c|c}
+		O &   &  \\      \hline
+		  & O &  \\      \hline
+		  &   &(O)
+	  \end{tabular} \\
+	\end{center}
+~\\
+\textbf{2)} If an opponent can make a winning move, block it. \\
+\tab\textbf{I.} Block rows \\
+\begin{center}
+\begin{tabular}{c|c|c}
+	  &   &   \\      \hline
+	O & O & (X)  \\      \hline
+	  &   &  
+  \end{tabular} \\
+\end{center}
+\tab\textbf{II.} Block columns \\
+\begin{center}
+	\begin{tabular}{c|c|c}
+		  & O &   \\      \hline
+		  &(X)&   \\      \hline
+		  & O &  
+	  \end{tabular} \\
+	\end{center}
+\tab\textbf{III.} Block Diagonals \\
+\begin{center}
+	\begin{tabular}{c|c|c}
+		O &   &  \\      \hline
+		  & O &  \\      \hline
+		  &   &(X)
+	  \end{tabular} \\
+	\end{center}
+\pagebreak 
+\textbf{3)} If a move can set up a guaranteed win next turn, make that move. \\
+\tab\textbf{I.} If one piece is in an otherwise empty row, and another piece is in an otherwise 
+	\tab\;\;\;\;empty column, place a piece in the intersection if it's blank \\
+\begin{center}
+\begin{tabular}{c|c|c}
+	X & O &   \\      \hline
+	O &(O)&   \\      \hline
+	  &   &  
+  \end{tabular} \\
+\end{center}
+\tab\textbf{II.} If two pieces are on the ends of a row or column, and the center and adjacent 
+	\tab\;\;\;\;\;\;side is free, place a piece on the other end of either diagonal \\
+\begin{center}
+	\begin{tabular}{c|c|c}
+		O & X & O \\      \hline
+		  &   &   \\      \hline
+		  &   &(O) 
+	  \end{tabular} \\
+	\end{center}
+~\\
+\textbf{4)} If an opponent can set up a guaranteed win next turn, block that move. \\
+\tab\textbf{I.} If one opponent piece is in an otherwise empty row, and another opponent piece 
+	\tab\;\;\;\;is in an otherwise empty column, place a piece in the intersection if it's blank \\
+\begin{center}
+\begin{tabular}{c|c|c}
+	X & O &   \\      \hline
+	O &(X)&   \\      \hline
+	  &   &  
+  \end{tabular} \\
+\end{center}
+\tab\textbf{II.} If two opponent pieces are on the ends of a row or column, and the center and 
+\tab\;\;\;\;\;\;adjacent side is free, place a piece on the other end of either diagonal \\
+\begin{center}
+	\begin{tabular}{c|c|c}
+		O & X & O \\      \hline
+		  &   &   \\      \hline
+		  &   &(X) 
+	  \end{tabular} \\
+	\end{center}
+~\\
+\textbf{5)} If the center is available, move into the center. \\
+\\
+\textbf{6)} If an opponent is in the corner, move into an adjacent corner if possible. \\
+\\
+\textbf{7)} If any corners are available, move into a corner. \\
+\\
+\textbf{8)} If any sides are available, move into a side. \\
+ \end{document}

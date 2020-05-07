@@ -1,0 +1,144 @@
+python3 Main.py map_clauses.cnf prob1b.cnf
+
+Props:
+NSWb NSWg NSWr NTb NTg NTr Qb Qg Qr SAb SAg SAr Tb Tg Tr Vb Vg Vr WAb WAg WAr 
+Initial clauses:
+0: (WAr v WAg v WAb)
+1: (-WAr v -WAg)
+2: (-WAr v -WAb)
+3: (-WAg v -WAr)
+4: (-WAg v -WAb)
+5: (-WAb v -WAr)
+6: (-WAb v -WAg)
+7: (NTr v NTg v NTb)
+8: (-NTr v -NTg)
+9: (-NTr v -NTb)
+10: (-NTg v -NTr)
+11: (-NTg v -NTb)
+12: (-NTb v -NTr)
+13: (-NTb v -NTg)
+14: (SAr v SAg v SAb)
+15: (-SAr v -SAg)
+16: (-SAr v -SAb)
+17: (-SAg v -SAr)
+18: (-SAg v -SAb)
+19: (-SAb v -SAr)
+20: (-SAb v -SAg)
+21: (Qr v Qg v Qb)
+22: (-Qr v -Qg)
+23: (-Qr v -Qb)
+24: (-Qg v -Qr)
+25: (-Qg v -Qb)
+26: (-Qb v -Qr)
+27: (-Qb v -Qg)
+28: (Vr v Vg v Vb)
+29: (-Vr v -Vg)
+30: (-Vr v -Vb)
+31: (-Vg v -Vr)
+32: (-Vg v -Vb)
+33: (-Vb v -Vr)
+34: (-Vb v -Vg)
+35: (NSWr v NSWg v NSWb)
+36: (-NSWr v -NSWg)
+37: (-NSWr v -NSWb)
+38: (-NSWg v -NSWr)
+39: (-NSWg v -NSWb)
+40: (-NSWb v -NSWr)
+41: (-NSWb v -NSWg)
+42: (Tr v Tg v Tb)
+43: (-Tr v -Tg)
+44: (-Tr v -Tb)
+45: (-Tg v -Tr)
+46: (-Tg v -Tb)
+47: (-Tb v -Tr)
+48: (-Tb v -Tg)
+49: (-WAr v -NTr)
+50: (-WAg v -NTg)
+51: (-WAb v -NTb)
+52: (-WAr v -SAr)
+53: (-WAg v -SAg)
+54: (-WAb v -SAb)
+55: (-NTr v -SAr)
+56: (-NTg v -SAg)
+57: (-NTb v -SAb)
+58: (-NTr v -Qr)
+59: (-NTg v -Qg)
+60: (-NTb v -Qb)
+61: (-SAr v -Qr)
+62: (-SAg v -Qg)
+63: (-SAb v -Qb)
+64: (-SAr v -NSWr)
+65: (-SAg v -NSWg)
+66: (-SAb v -NSWb)
+67: (-SAr v -Vr)
+68: (-SAg v -Vg)
+69: (-SAb v -Vb)
+70: (-Qr v -NSWr)
+71: (-Qg v -NSWg)
+72: (-Qb v -NSWb)
+73: (-NSWr v -Vr)
+74: (-NSWg v -Vg)
+75: (-NSWb v -Vb)
+76: (WAr)
+77: (Tr)
+-----------
+Model: {'NSWb': None, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': None, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': None, 'Tb': None, 'Tg': None, 'Tr': None, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': None, 'WAg': None, 'WAr': None}
+Unit clause on (Tr) implies Tr is True
+Model: {'NSWb': None, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': None, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': None, 'Tb': None, 'Tg': None, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': None, 'WAg': None, 'WAr': None}
+Unit clause on (-Tr v -Tb) implies Tb is False
+Model: {'NSWb': None, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': None, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': None, 'Tb': False, 'Tg': None, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': None, 'WAg': None, 'WAr': None}
+Unit clause on (-Tr v -Tg) implies Tg is False
+Model: {'NSWb': None, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': None, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': None, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': None, 'WAg': None, 'WAr': None}
+Unit clause on (WAr) implies WAr is True
+Model: {'NSWb': None, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': None, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': None, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': None, 'WAg': None, 'WAr': True}
+Unit clause on (-WAr v -NTr) implies NTr is False
+Model: {'NSWb': None, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': None, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': None, 'WAg': None, 'WAr': True}
+Unit clause on (-WAr v -SAr) implies SAr is False
+Model: {'NSWb': None, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': None, 'WAg': None, 'WAr': True}
+Unit clause on (-WAr v -WAb) implies WAb is False
+Model: {'NSWb': None, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': None, 'WAr': True}
+Unit clause on (-WAr v -WAg) implies WAg is False
+Model: {'NSWb': None, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Choice point for NSWb
+Choosing True
+Model: {'NSWb': True, 'NSWg': None, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (-NSWg v -NSWb) implies NSWg is False
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': None, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (-NSWr v -NSWb) implies NSWr is False
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': None, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (-Qb v -NSWb) implies Qb is False
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': False, 'Qg': None, 'Qr': None, 'SAb': None, 'SAg': None, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (-SAb v -NSWb) implies SAb is False
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': False, 'Qg': None, 'Qr': None, 'SAb': False, 'SAg': None, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (SAr v SAg v SAb) implies SAg is True
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': None, 'NTg': None, 'NTr': False, 'Qb': False, 'Qg': None, 'Qr': None, 'SAb': False, 'SAg': True, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (-NTg v -SAg) implies NTg is False
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': None, 'NTg': False, 'NTr': False, 'Qb': False, 'Qg': None, 'Qr': None, 'SAb': False, 'SAg': True, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (NTr v NTg v NTb) implies NTb is True
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': True, 'NTg': False, 'NTr': False, 'Qb': False, 'Qg': None, 'Qr': None, 'SAb': False, 'SAg': True, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (-SAg v -Qg) implies Qg is False
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': True, 'NTg': False, 'NTr': False, 'Qb': False, 'Qg': False, 'Qr': None, 'SAb': False, 'SAg': True, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (Qr v Qg v Qb) implies Qr is True
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': True, 'NTg': False, 'NTr': False, 'Qb': False, 'Qg': False, 'Qr': True, 'SAb': False, 'SAg': True, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': None, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (-NSWb v -Vb) implies Vb is False
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': True, 'NTg': False, 'NTr': False, 'Qb': False, 'Qg': False, 'Qr': True, 'SAb': False, 'SAg': True, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': False, 'Vg': None, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (-SAg v -Vg) implies Vg is False
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': True, 'NTg': False, 'NTr': False, 'Qb': False, 'Qg': False, 'Qr': True, 'SAb': False, 'SAg': True, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': False, 'Vg': False, 'Vr': None, 'WAb': False, 'WAg': False, 'WAr': True}
+Unit clause on (Vr v Vg v Vb) implies Vr is True
+Model: {'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': True, 'NTg': False, 'NTr': False, 'Qb': False, 'Qg': False, 'Qr': True, 'SAb': False, 'SAg': True, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': False, 'Vg': False, 'Vr': True, 'WAb': False, 'WAg': False, 'WAr': True}
+Success!
+-----------
+Total backtracks:  0
+Total choice points:  1
+Total nodes visited:  22
+KB and additional facts can be satisfied with the given model
+{'NSWb': True, 'NSWg': False, 'NSWr': False, 'NTb': True, 'NTg': False, 'NTr': False, 'Qb': False, 'Qg': False, 'Qr': True, 'SAb': False, 'SAg': True, 'SAr': False, 'Tb': False, 'Tg': False, 'Tr': True, 'Vb': False, 'Vg': False, 'Vr': True, 'WAb': False, 'WAg': False, 'WAr': True}
+-----------
+True props:
+NSWb
+NTb
+Qr
+SAg
+Tr
+Vr
+WAr

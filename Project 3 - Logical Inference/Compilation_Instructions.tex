@@ -1,0 +1,35 @@
+\documentclass[12pt]{letter}
+    \usepackage{amsmath,amssymb,amsthm,latexsym,geometry}
+    \geometry{ margin=0.7in}
+    \newcommand\tab[1][3cm]{\hspace*{#1}}
+    
+\begin{document}
+\vspace*{-10mm}
+
+{\large \noindent
+\underline{Instructions on how to compile and run program:}} \\
+\\
+To compile the main program, unzip the included .zip file into a new directory, \\
+navigate to it and run with python 3 using the terminal command: \\
+\\
+"python3\;  Main.py\;   $<$KB Filename$>$\;   '$<$optional query$>$' " \\
+\\
+If the program is run without a query specified, the program will ask if you would like to enter a query. 
+You can select yes by typing 'y' or 'yes' (case insensitive). The program will then ask you to enter
+your query. After a query is entered, the program will display the results of the query and 
+ask if you would like to enter another query. To exit the program, simply enter 'n' or 'no' 
+(again, case insensitive). \\
+\\
+If a query is specified in the terminal, the results will be displayed and the program will exit. \\
+\\
+Queries must be formatted such that each individual query must be enclosed in at least one set of parentheses, with an optional set of parentheses around the entire overall query \\
+For example, $((move\;o\;?x\;?y))$ is properly formatted, as well as $(move\;o\;?x \;?y)$. \\
+\\
+Every query must also be formatted such that variables are preceded by a '?', and literals do not contain '?', '(', or ')'. \\
+\\
+The program will output every variable substitution that can be inferred to be true, or, if no variables are present in the query, 
+the program will output 'True' if the query can be inferred to be true, or indicate that the query cannot be inferred with the given KB. \\
+\\
+Queries can also be joined together with implicit conjunction with the form $((animal\;?x)\;(bird\;?x))$ or $(animal\;?x)\;(bird\;?x)$. \\
+In this case the program will output every variable substitution in which both queries are true. \\
+\end{document}

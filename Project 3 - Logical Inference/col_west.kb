@@ -1,0 +1,11 @@
+# Facts
+((missile m1))
+((owns nono m1))
+((enemy nono america))
+((american west))
+
+# Rules
+((enemy ?x america) (hostile ?x))
+((missile ?x) (weapon ?x))
+((missile ?x) (owns nono ?x) (sells west ?x nono))
+((american ?x) (weapon ?y) (sells ?x ?y ?z) (hostile ?z) (criminal ?x))

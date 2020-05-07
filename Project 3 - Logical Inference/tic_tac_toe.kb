@@ -1,0 +1,87 @@
+# Facts
+((occ o 1 1))
+((occ x 1 2))
+((occ o 1 3))
+((blank 2 1))
+((blank 2 2))
+((blank 2 3))
+((occ x 3 1))
+((blank 3 2))
+((blank 3 3))
+
+# Utility Rules
+#############################
+((neq x o))
+((neq o x))
+
+((opp 1 3)) 
+((opp 3 1))
+
+((unique 1 2 3))
+((unique 1 3 2))
+((unique 2 1 3))
+((unique 2 3 1))
+((unique 3 1 2))
+((unique 3 2 1))
+#############################
+
+# Completion Moves
+#############################
+# Row completion
+((occ ?p ?x ?y1) (occ ?p ?x ?y2) (unique ?y1 ?y2 ?y3) (blank ?x ?y3) (move ?p ?x ?y3))
+
+# Column completion
+((occ ?p ?x1 ?y) (occ ?p ?x2 ?y) (unique ?x1 ?x2 ?x3) (blank ?x3 ?y) (move ?p ?x3 ?y))
+
+# Diagonal completion
+((occ ?p ?x1 ?y1) (occ ?p 2 2) (opp ?x1 ?x3) (opp ?y1 ?y3) (blank ?x3 ?y3) (move ?p ?x3 ?y3))
+#############################
+
+# Blocking Moves
+#############################
+# Block row
+((occ ?p ?x ?y1) (occ ?p ?x ?y2) (unique ?y1 ?y2 ?y3) (blank ?x ?y3) (neq ?p ?q) (move ?q ?x ?y3))
+
+# Block column
+((occ ?p ?x1 ?y) (occ ?p ?x2 ?y) (unique ?x1 ?x2 ?x3) (blank ?x3 ?y) (neq ?p ?q) (move ?q ?x3 ?y))
+
+# Block diagonal
+((occ ?p ?x1 ?y1) (occ ?p 2 2) (opp ?x1 ?x3) (opp ?y1 ?y3) (blank ?x3 ?y3) (neq ?p ?q) (move ?q ?x3 ?y3))
+#############################
+
+# Setup/Forking Moves
+#############################
+# If one piece is in an otherwise empty row, and another piece is in an otherwise empty column, place a piece in the intersection if it's blank
+((blank ?x ?y) (unique ?x ?x1 ?x2) (unique ?y ?y1 ?y2) (occ ?p ?x1 ?y ) (blank ?x2 ?y) (occ ?p ?x ?y1) (blank ?x ?y2) (move ?p ?x ?y))
+
+# If two pieces are on the ends of a row or column, and the center and adjacent side is free, place a piece on the other end of either diagonal
+((occ ?p ?x1 ?y1) (occ ?p ?x1 ?y2) (opp ?y1 ?y2) (opp ?x1 ?x2) (blank 2 ?y2) (blank 2 2) (blank ?x2 ?y2) (move ?p ?x2 ?y2))
+((occ ?p ?x1 ?y1) (occ ?p ?x2 ?y1) (opp ?x1 ?x2) (opp ?y1 ?y2) (blank ?x1 2) (blank 2 2) (blank ?x1 ?y2) (move ?p ?x1 ?y2))
+#############################
+
+# Setup/Fork Blocking Moves
+#############################
+# If one opponent piece is in an otherwise empty row, and another opponent piece is in an otherwise empty column, place a piece in the intersection if it's blank
+((blank ?x ?y) (unique ?x ?x1 ?x2) (unique ?y ?y1 ?y2) (occ ?p ?x1 ?y ) (blank ?x2 ?y) (occ ?p ?x ?y1) (blank ?x ?y2) (neq ?p ?q) (move ?q ?x ?y))
+
+# If two opponent pieces are on the ends of a row or column (the space between them blocked) and the center is free, place a piece on the other end of either diagonal
+((occ ?p ?x1 ?y1) (occ ?p ?x1 ?y2) (opp ?y1 ?y2) (opp ?x1 ?x2) (blank 2 ?y2) (blank 2 2) (blank ?x2 ?y2) (neq ?p ?q) (move ?q ?x2 ?y2))
+((occ ?p ?x1 ?y1) (occ ?p ?x2 ?y1) (opp ?x1 ?x2) (opp ?y1 ?y2) (blank ?x1 2) (blank 2 2) (blank ?x1 ?y2) (neq ?p ?q) (move ?q ?x1 ?y2))
+#############################
+
+# Filler Moves 
+#############################
+# If center is available, play it
+((blank 2 2) (move ?p 2 2))
+
+# If opponent is in the corner, move into an adjacent corner
+((occ ?p ?x1 ?y1) (blank ?x1 ?y2) (opp ?y1 ?y2) (neq ?p ?q) (move ?q ?x1 ?y2))
+((occ ?p ?x1 ?y1) (blank ?x2 ?y1) (opp ?x1 ?x2) (neq ?p ?q) (move ?q ?x2 ?y1))
+
+# If corners are available, move into the corner
+((blank ?x ?y) (opp ?x ?t1) (opp ?y ?t2) (move ?p ?x ?y)) 
+
+# If sides are available, move into the side
+((blank ?x 2) (opp ?x ?t) (move ?p ?x 2))
+((blank 2 ?y) (opp ?y ?t) (move ?p 2 ?y))
+#############################
